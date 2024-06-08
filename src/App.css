@@ -1,0 +1,433 @@
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #FBF9EC;
+}
+
+.user-detail {
+  margin: 10px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: left;
+  font-family: Arial, sans-serif;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.profile-picture {
+  width: 70px;
+  height: 70px;
+  background-color: gray;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile-details {
+  margin-left: 30px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  color: #000000;
+}
+.profile-name {
+  font-weight: bold;
+  text-align: left;
+  font-size: 18pt;
+}
+.profile-location {
+  color: #000000;
+  text-align: left;
+  font-size: 12pt;
+}
+
+.track-batches {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: Arial, sans-serif;
+  margin-bottom: 2rem;
+  margin: 10px;
+  width: 100%;
+}
+
+label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #000000;
+}
+
+.search-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  background-color: #DFD8C2; /* Light beige color */
+  border-radius: 50px;
+  padding: 0.5rem;
+  width: 75%;
+}
+
+.input-container input {
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 50px 0 0 50px;
+  flex-grow: 1;
+}
+
+.input-container button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 50px 50px 0;
+}
+
+.input-container button .search-icon {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.search-btn {
+  display: flex;
+  align-items: center;
+  background-color: #DFD8C2; /* Light beige color */
+  border-radius: 50px;
+  padding: 0.5rem;
+  width: 12%
+}
+
+.feature-container{
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.features {
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.feature {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #938D6B;
+  height: 80%;
+  width: 30%;
+}
+
+.recents {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.recents-label {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+span {
+  color: #000000;
+}
+
+
+.batch-display-home {
+  margin-top: 10px;
+  display: flex;
+  width: 100%;
+  height: 150px;
+  background-color: #DFD8C2;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.batch-details {
+  flex: 1;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  align-items: flex-start;
+}
+
+.batch-details h2{
+  text-align: left;
+  color: #000000;
+  font-size: 12pt;
+  margin-top: 0;
+}
+
+.batch-details h3{
+  text-align: left;
+  color: #000000;
+  font-size: 8pt;
+  margin: 0;
+}
+
+.batch-details p{
+  text-align: left;
+  color: #000000;
+  font-size: 10pt;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.batch-display-color {
+  flex: 1;
+  background-color: #6a4c42; /* Dark brown color */
+}
+
+
+
+
+
+
+
+.history-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.history-header h2, div {
+  color: #000000;
+}
+
+.search-history {
+  width: 100%;
+  background-color: #DFD8C2; /* Light beige color */
+  border-radius: 50px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.search-history input {
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 50px 0 0 50px;
+  flex-grow: 1;
+  width: 90%;
+}
+
+.history-content {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.content-item {
+  width: 100%;
+  height: 170px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #848D4C;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.content-details {
+  padding: 20px;
+  padding-left: 30px;
+}
+
+.content-details h2{
+  text-align: left;
+  color: #FBF9EC;
+  font-size: 12pt;
+  margin-top: 0;
+}
+
+.content-details h3{
+  text-align: left;
+  color: #FBF9EC;
+  font-size: 8pt;
+  margin: 0;
+}
+
+.content-details p{
+  text-align: left;
+  color: #FBF9EC;
+  font-size: 10pt;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.batch-progress{
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 0;
+}
+
+.dash {
+  width: 40px; /* Adjust the width for the dash */
+  height: 2px; /* Adjust the height for the dash */
+  margin: 14px 0; /* Adjust spacing between circles */
+}
+
+.off {
+  background-color: #DFD8C2;
+}
+
+.on {
+  background-color: #DBC45C;
+}
+
+
+.batch-edit {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #848D4C;
+  border-radius: 20px;
+  height: 90%;
+  justify-content: space-between;
+}
+.batch-edit .batch-progress{
+  margin-top: 70px;
+}
+.batch-edit .batch-progress .dash {
+  width: 60px;
+  margin-top: 24px;
+}
+.batch-edit .batch-progress .circle {
+  width: 50px;
+  height: 50px;
+}
+
+.detail-form {
+  width: 380px;
+  display: flex;
+  margin-top: 0;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.detail-form h2, h3 {
+  text-align: left;
+  color: #FBF9EC;
+}
+
+.detail-form input {
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 50px 0 0 50px;
+  flex-grow: 1;
+  width: 90%;
+  background-color: #DFD8C2; /* Light beige color */
+  border-radius: 50px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.image-upload {
+  background-color: #555;
+  width: 380px;
+  height: 300px;
+  margin-top: 30px;
+}
+
+.batch-buttons {
+  width: 380px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.batch-btn {
+  padding: 10px;
+  background-color: #DFD8C2;
+  font-weight: bold;
+}
+
+.batch-edit-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
